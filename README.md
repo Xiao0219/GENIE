@@ -1,4 +1,8 @@
-# **Borrowing from Anything: A Generalizable Framework for Reference-Guided Instance Editing**
+# **GENIE**
+
+# [**Borrowing from Anything: A Generalizable Framework for Reference-Guided Instance Editing**](https://arxiv.org/abs/2512.15138)
+
+**Authors:** Shengxiao zhou, Chenghua Li, Jianhao Huang, Qinghao Hu, Yifan Zhang
 
 ## Installing Dependencies
 ```bash
@@ -43,12 +47,12 @@ The inference script processes all reference images in the specified directory. 
 The test dataset should be organized as follows:
 ```
 test_data_directory/
-├── sample1_ref_image.jpg    # Reference image for sample 1
-├── sample1_tar_image.jpg    # Target image for sample 1
-├── sample1_mask.png         # Mask image for sample 1
-├── sample2_ref_image.jpg    # Reference image for sample 2
-├── sample2_tar_image.jpg    # Target image for sample 2
-├── sample2_mask.png         # Mask image for sample 2
+├── ref_image_1.jpg    # Reference image for sample 1
+├── tar_image_1.jpg    # Target image for sample 1
+├── mask_1.png         # Mask image for sample 1
+├── ref_image_2.jpg    # Reference image for sample 2
+├── tar_image_2.jpg    # Target image for sample 2
+├── mask_2.png         # Mask image for sample 2
 └── ...                      # More samples
 ```
 
