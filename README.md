@@ -1,6 +1,6 @@
 ## [**Borrowing from Anything: A Generalizable Framework for Reference-Guided Instance Editing**](https://arxiv.org/abs/2512.15138)
 
-**Authors:** Shengxiao zhou, Chenghua Li, Jianhao Huang, Qinghao Hu, Yifan Zhang
+<!-- **Authors:** Shengxiao zhou, Chenghua Li, Jianhao Huang, Qinghao Hu, Yifan Zhang -->
 
 ## Installing Dependencies
 ```bash
