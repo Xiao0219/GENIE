@@ -2,6 +2,10 @@
 
 <!-- **Authors:** Shengxiao zhou, Chenghua Li, Jianhao Huang, Qinghao Hu, Yifan Zhang -->
 
+## Ablation Studies
+Ablation Study of Key Components
+![Ablation](assets/Ablation1.png)
+
 ## Installing Dependencies
 ```bash
 pip install -r requirements.txt
