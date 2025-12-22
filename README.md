@@ -3,8 +3,9 @@
 <!-- **Authors:** Shengxiao zhou, Chenghua Li, Jianhao Huang, Qinghao Hu, Yifan Zhang -->
 
 ## Ablation Studies
-Ablation Study of Key Components
+### Ablation Study of Key Components
 ![Ablation](assets/Ablation1.png)
+As shown in the figure, compared with the results obtained without the SAM module, the generated teddy bear exhibits noticeable spatial misalignment. After incorporating the SAM module, this issue is effectively alleviated. In addition, the details generated on the dog’s paws become clearer and more structurally consistent with the introduction of the SAM module. Due to the complex background of the reference image, the target image relies on effectively extracting relevant information from the reference. The proposed ARSM module is able to decouple key feature information from the reference features, emphasizing regions that are highly correlated with the target while suppressing background interference. As a result, more semantically and structurally consistent details are generated on critical regions such as the dog’s paws and the teddy bear’s legs. These results demonstrate that the proposed ARSM module exhibits strong capability in feature-space alignment and key feature decoupling under complex backgrounds, leading to improved stability and finer detail quality in the generated results.
 
 ## Installing Dependencies
 ```bash
