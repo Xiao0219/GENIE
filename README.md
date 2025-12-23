@@ -7,6 +7,10 @@
 ![Ablation](assets/Ablation1.png)
 As shown in the figure, compared with the results obtained without the SAM module, the generated teddy bear exhibits noticeable spatial misalignment. After incorporating the SAM module, this issue is effectively alleviated. In addition, the details generated on the dog’s paws become clearer and more structurally consistent with the introduction of the SAM module. Due to the complex background of the reference image, the target image relies on effectively extracting relevant information from the reference. The proposed ARSM module is able to decouple key feature information from the reference features, emphasizing regions that are highly correlated with the target while suppressing background interference. As a result, more semantically and structurally consistent details are generated on critical regions such as the dog’s paws and the teddy bear’s legs. These results demonstrate that the proposed ARSM module exhibits strong capability in feature-space alignment and key feature decoupling under complex backgrounds, leading to improved stability and finer detail quality in the generated results.
 
+### Visualization of Scaling
+![Ablation](assets/Ablation2.png)
+Visualization of ARSM Scaling: To validate the disentanglement mechanism, we visualized the spatial scaling factor map (1+α), which modulates the reference features within the range of [0,2]. As shown in the heatmap, in a garment editing scenario, the module generates high activation values (approaching 2.0, shown in red) strictly concentrated on the garment region, effectively amplifying the intrinsic texture cues. Conversely, the background areas exhibit low activation values (approaching 0, shown in blue), indicating strong suppression of extrinsic noise. This qualitative evidence explicitly confirms that ARSM learns to "purify" the reference appearance by adaptively filtering out irrelevant attributes.
+
 ## Installing Dependencies
 ```bash
 pip install -r requirements.txt
