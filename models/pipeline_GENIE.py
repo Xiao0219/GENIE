@@ -170,7 +170,7 @@ def retrieve_latents(encoder_output, generator):
         raise AttributeError("Could not access latents of provided encoder_output")
 
 
-class PAInpaintPipeline(
+class GENIEPipeline(
     DiffusionPipeline, TextualInversionLoaderMixin, LoraLoaderMixin, FromSingleFileMixin
 ):
     r"""

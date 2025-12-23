@@ -18,10 +18,10 @@ from diffusers import StableDiffusionPipeline, StableDiffusionImg2ImgPipeline, S
 from diffusers import AutoencoderKL, DDPMScheduler, UNet2DConditionModel, DDIMScheduler
 from diffusers import DDIMScheduler, DDPMScheduler, DPMSolverMultistepScheduler
 #
-from models.pipeline_PAInpaint import PAInpaintPipeline
+from models.pipeline_GENIE import GENIEPipeline
 from models.ReferenceNet import ReferenceNet
 from models.depth_guider import DepthGuider
-from PAInpaint.PAInpaint_RefUet import PAInpaint_RefUet
+from GENIE.GENIE_RefUet import GENIE_RefUet
 from dataset.data_utils import *
 from accelerate.logging import get_logger
 

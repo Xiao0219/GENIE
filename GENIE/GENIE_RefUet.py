@@ -20,7 +20,7 @@ else:
 from .resampler import LinearResampler
 
 # from models.ReferenceNet_attention import ReferenceNetAttention
-from models.DSAM_424 import ReferenceNetAttentionXCA as ReferenceNetAttention
+from models.ReferenceNet_attention import ReferenceNetAttentionXCA as ReferenceNetAttention
 
 
 class PRM_Module(nn.Module):
@@ -64,7 +64,7 @@ class PRM_Module(nn.Module):
         return x_transformed
 
 
-class PAInpaint_RefUet:
+class GENIE_RefUet:
     def __init__(self, sd_pipe, image_encoder_path, model_ckpt, depth_estimator, depth_guider, referencenet, device):
         # Takes model path as input
         self.device = device
