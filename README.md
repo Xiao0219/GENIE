@@ -9,7 +9,7 @@ As shown in the figure, compared with the results obtained without the SAM modul
 
 ### Visualization of Scaling
 ![Ablation](assets/Ablation2.png)
-Visualization of ARSM Scaling: To validate the disentanglement mechanism, we visualized the spatial scaling factor map (1+α), which modulates the reference features within the range of [0,2]. As shown in the heatmap, in a garment editing scenario, the module generates high activation values (approaching 2.0, shown in red) strictly concentrated on the garment region, effectively amplifying the intrinsic texture cues. Conversely, the background areas exhibit low activation values (approaching 0, shown in blue), indicating strong suppression of extrinsic noise. This qualitative evidence explicitly confirms that ARSM learns to "purify" the reference appearance by adaptively filtering out irrelevant attributes.
+**Visualization of ARSM Scaling:** To validate the disentanglement mechanism, we visualized the spatial scaling factor map (1+α), which modulates the reference features within the range of [0,2]. As shown in the heatmap, in a garment editing scenario, the module generates high activation values (approaching 2.0, shown in red) strictly concentrated on the garment region, effectively amplifying the intrinsic texture cues. Conversely, the background areas exhibit low activation values (approaching 0, shown in blue), indicating strong suppression of extrinsic noise. This qualitative evidence explicitly confirms that ARSM learns to "purify" the reference appearance by adaptively filtering out irrelevant attributes.
 
 ## Installing Dependencies
 ```bash
